@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 기본 메타 태그 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    
+    <!-- 오픈그래프 메타 태그 -->
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="/thumbnail/thumbnail.png?ver=20220421">
+    
+    <!-- 트위터 카드 메타 태그 -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="/thumbnail/thumbnail.png?ver=20220623">
+    
+    <!-- 캐시 컨트롤 -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    
+    <title>METAROCK</title>
+    <link rel="icon" href="/images/logo/favicon.png">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- 외부 라이브러리 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="/css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="/css/common.css?ver=20220713">
+    <link rel="stylesheet" href="/css/style.css?ver=20231212">
+    <link rel="stylesheet" href="/css/responsive.css?ver=20231212">
+    <link rel="stylesheet" href="/css/suneditor.css">
+    
+    <!-- 외부 라이브러리 JavaScript -->
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- 커스텀 JavaScript -->
+    <script src="/js/plugins.js?ver=20231212"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/js.js?ver=20231212"></script>
+    <script src="/js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+    <noscript>이 사이트를 사용하려면 JavaScript를 활성화해야 합니다.</noscript>
+    
+    <!-- 루트 컨테이너 -->
+    <div id="root">
+        <div class="App">
+            <div class="wrap">
+                <!-- 메인 컨텐츠 영역 -->
+                <div>
+                    <div style="position: relative;">
+                        <!-- 헤더 영역 -->
+                        <div id="header-include"></div>
+                        <script>
+                            fetch('header.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('header-include').innerHTML = data;
+                                });
+                        </script>
+                        
+                        <!-- 팝업 레이어 -->
+                        <div id="popup_layer" class="container"></div>
+                        
+                        <!-- 컨텐츠 래퍼 -->
+                        <div class="wrap">
+                            <!-- 메인 컨텐츠 -->
+                            <div id="content">
+                                <!-- 헤븐 메인 섹션 -->
+                                <section id="heavenMain" class="sub_main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    BUSINESS · Heaven
+                                                </p>
+                                                <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Heaven, 차세대<br>
+                                                    서바이벌 배틀 게임의 표준
+                                                </h3>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.2s">
+                                                    Heaven은 DOTA/CHAOS 등 글로벌 인기 게임을 모티브로 탄생한 
+                                                    Aeon Of Strife(AOS) 게임입니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 메인 슬라이더 -->
+                                        <div class="swiper swiper-fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 특징 섹션 -->
+                                <section id="feature" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Our feature
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    E-스포츠용 게임, Heaven
+                                                </h4>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.6s">
+                                                    빠르고 정교한 컨트롤, 그리고 순간적인 센스가 승패를 좌우합니다.
+                                                </p>
+                                            </div>
+                                            
+                                            <!-- 특징 목록 -->
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <div class="thumb">
+                                                    <img src="/images/heaven/feature1.png" alt="E-스포츠 대회 개최">
+                                                </div>
+                                                <dl>
+                                                    <dt>E-스포츠 대회 개최</dt>
+                                                    <dd>
+                                                        대회를 개최함으로써 E-스포츠의 활성화와 게이머들의 
+                                                        적극적인 참여를 유도
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.0s">
+                                                <div class="thumb">
+                                                    <img src="/images/heaven/feature2.png" alt="본격 P2E GAME">
+                                                </div>
+                                                <dl>
+                                                    <dt>본격 P2E GAME</dt>
+                                                    <dd>
+                                                        개인이 소유한 아이템을 NFT화하여, 당사의 마켓플레이스에서 
+                                                        거래하도록 지원
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="1.2s">
+                                                <div class="thumb">
+                                                    <img src="/images/heaven/feature3.png" alt="글로벌 게임 플랫폼 Steam 출시">
+                                                </div>
+                                                <dl>
+                                                    <dt>글로벌 게임 플랫폼 Steam 출시</dt>
+                                                    <dd>
+                                                        글로벌 진출과 접근성 향상을 위해 Steam을 통한 게임 출시 계획
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 특별 요소 섹션 -->
+                                <section id="special" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Special factor
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Heaven의 차별화 포인트
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 액션 시스템 -->
+                                        <div class="row fir">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
+                                                <img src="/images/heaven/special1.gif" alt="Heaven : Action">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
+                                                <dl>
+                                                    <dt>Heaven : Action</dt>
+                                                    <dd>캐릭터의 화려한 액션을 보여주기 위해 다양한 모션을 구현</dd>
+                                                    <dd>캐릭터 별 70여 가지의 다양한 모션 표현</dd>
+                                                    <dd>
+                                                        캐릭터 별 액션성을 위한 기본 공격 모션, 스페셜 공격 및 
+                                                        콤보 공격 모션을 표현
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 스킬 시스템 -->
+                                        <div class="row sec">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 right wow fadeInRight" data-wow-delay="0.6s">
+                                                <img src="/images/heaven/special2.gif" alt="Heaven : Skill System">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <dl>
+                                                    <dt>Heaven : Skill System</dt>
+                                                    <dd>
+                                                        캐릭터 기반의 게임으로 30여 가지의 독립적인 캐릭터성을 
+                                                        기반으로 제작
+                                                    </dd>
+                                                    <dd>
+                                                        각각의 캐릭터 스토리를 보유하며 캐릭터 별 연계 스토리가 
+                                                        게임 내에 반영되어 전략적인 캐릭터 조합에 활용
+                                                    </dd>
+                                                    <dd>
+                                                        각 캐릭터는 10개 ~ 20개의 캐릭터 특성에 맞는 다양한 
+                                                        스킬을 보유함
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 맵 시스템 -->
+                                        <div class="row thi">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="1.0s">
+                                                <img src="/images/heaven/special3.gif" alt="Heaven : Map">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="1.2s">
+                                                <dl>
+                                                    <dt>Heaven : Map</dt>
+                                                    <dd>
+                                                        맵 별로 대규모, 소규모 전투를 유도하는 전략성을 포함하여 
+                                                        유저가 다양한 전략적 플레이를 즐길 수 있도록 기획
+                                                    </dd>
+                                                    <dd>
+                                                        맵은 기본적으로 3가지 난입 경로를 가지고 있으며, 맵에 따라 
+                                                        게임의 전략적 이용이 가능한 미션이 존재
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 갤러리 섹션 -->
+                                <section id="gallery" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Gallery
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    인게임 이미지
+                                                </h4>
+                                                <ul>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                                        <img src="/images/heaven/gallery1.png" alt="인게임 이미지1">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.7s">
+                                                        <img src="/images/heaven/gallery2.png" alt="인게임 이미지2">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                                        <img src="/images/heaven/gallery3.png" alt="인게임 이미지3">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.9s">
+                                                        <img src="/images/heaven/gallery4.png" alt="인게임 이미지4">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 컨택트 섹션 -->
+                                <section id="heavenContact" class="sub_contact">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                Heaven에 대해 더 자세히 알고 싶으신가요?
+                                            </h4>
+                                            <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">
+                                                CONTACT US
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            
+                            <!-- 푸터 영역 -->
+                            <div id="footer-include"></div>
+                            <script>
+                                fetch('footer.html')
+                                    .then(res => res.text())
+                                    .then(data => {
+                                        document.getElementById('footer-include').innerHTML = data;
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

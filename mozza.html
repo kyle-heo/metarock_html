@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 기본 메타 태그 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    
+    <!-- 오픈그래프 메타 태그 -->
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="/thumbnail/thumbnail.png?ver=20220421">
+    
+    <!-- 트위터 카드 메타 태그 -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="/thumbnail/thumbnail.png?ver=20220623">
+    
+    <!-- 캐시 컨트롤 -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    
+    <title>METAROCK</title>
+    <link rel="icon" href="/images/logo/favicon.png">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- 외부 라이브러리 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="/css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="/css/common.css?ver=20220713">
+    <link rel="stylesheet" href="/css/style.css?ver=20231212">
+    <link rel="stylesheet" href="/css/responsive.css?ver=20231212">
+    <link rel="stylesheet" href="/css/suneditor.css">
+    
+    <!-- 외부 라이브러리 JavaScript -->
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- 커스텀 JavaScript -->
+    <script src="/js/plugins.js?ver=20231212"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/js.js?ver=20231212"></script>
+    <script src="/js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+    <noscript>이 사이트를 사용하려면 JavaScript를 활성화해야 합니다.</noscript>
+    
+    <!-- 루트 컨테이너 -->
+    <div id="root">
+        <div class="App">
+            <div class="wrap">
+                <!-- 메인 컨텐츠 영역 -->
+                <div>
+                    <div style="position: relative;">
+                        <!-- 헤더 영역 -->
+                        <div id="header-include"></div>
+                        <script>
+                            fetch('header.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('header-include').innerHTML = data;
+                                });
+                        </script>
+                        
+                        <!-- 팝업 레이어 -->
+                        <div id="popup_layer" class="container"></div>
+                        
+                        <!-- 컨텐츠 래퍼 -->
+                        <div class="wrap">
+                            <!-- 메인 컨텐츠 -->
+                            <div id="content">
+                                <!-- 모짜와 살리 메인 섹션 -->
+                                <section id="mozzaMain" class="sub_main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    BUSINESS · Mozza & Sali
+                                                </p>
+                                                <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Mozza & Sali<br>
+                                                    Full CG 3D Animation
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 메인 슬라이더 -->
+                                        <div class="swiper swiper-fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 스토리라인 섹션 -->
+                                <section id="storyline" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Storyline
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    모짜와 살리의 <br class="m">수상한 버디 애니메이션
+                                                </h4>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.6s">
+                                                    슈퍼히어로의 조수들이자 라이벌 '모짜와 살리' 그들의 대결은 스승 '슈울짱(슈퍼울트라 짱짱맨)'이 준 미션뿐만 아니라, 
+                                                    <br class="pc">청소하고 음식 만드는 등의 하찮은 일에까지 이어진다.
+                                                </p>
+                                                <img src="/images/mozza/storyline.png" alt="Character Design" 
+                                                     class="wow fadeInUp" data-wow-delay="0.8s">
+                                                <p class="text wow fadeInUp" data-wow-delay="1.0s">
+                                                    Character Design
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 모짜와 살리 디자인 섹션 -->
+                                <section id="mozza">
+                                    <div class="container">
+                                        <!-- 컬러 컨셉 -->
+                                        <div class="row fir">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
+                                                <img src="/images/mozza/mozza1.png" alt="명료한 비비드 톤(Vivid Tone)">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
+                                                <p>Color Concept</p>
+                                                <dl>
+                                                    <dt>명료한 비비드 톤(Vivid Tone)</dt>
+                                                    <dd>
+                                                        뒤죽박죽 된 배경의 재미, 통통 튀는 캐릭터들의 성격을 잘 살리기 위해 
+                                                        컬러는 역동적이고(Dynamic), 강렬하고(Intensity), 풍부한(Abundant) 
+                                                        느낌의 비비드 톤(Vivid Tone)으로 구성하였습니다.
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 톤 앤 매너 -->
+                                        <div class="row sec">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 right wow fadeInRight" data-wow-delay="0.6s">
+                                                <img src="/images/mozza/mozza2.png" alt="선명하고 산뜻한 느낌의 발랄한 영상">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <p>Tone & Manner</p>
+                                                <dl>
+                                                    <dt>선명하고 산뜻한 느낌의 발랄한 영상</dt>
+                                                    <dd>
+                                                        단순화되고 선명하고 산뜻한 컬러와 Low Key와 Medium Key를 적절히 조화한 Tone. 
+                                                        모션에 어울리는 경쾌하고 발랄한 BGM, Sound, SFX
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 비즈니스 플랜 섹션 -->
+                                <section id="plan" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Business plan
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    아이부터 어른까지 <br class="m">어필할 수 있는 콘텐츠 제작
+                                                </h4>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.6s">
+                                                    Adulkid부터 Kidult까지 함께 공감하고 즐길 수 있는 슬랩스틱 코미디로, 
+                                                    사업의 확장과 수익을 극대화하기 위해 <br class="pc">멀티플랫폼 환경의 
+                                                    트랜스미디어 콘텐츠 제작됩니다.
+                                                </p>
+                                                <img src="/images/mozza/plan.png" alt="아이부터 어른까지 어필할 수 있는 콘텐츠 제작" 
+                                                     class="wow fadeInUp" data-wow-delay="0.8s">
+                                                <p class="text wow fadeInUp" data-wow-delay="1.0s">
+                                                    Mozza & Sali 애니메이션은 OSMU, Collaboration, Co Work를 기반으로 
+                                                    다양한 분야의 상품 판매를 통해 <br class="pc">수익을 이끌어낼 수 있는 즉, 
+                                                    트랜스미디어에 용이한 형식의 고부가가치 콘텐츠입니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- 컨택트 섹션 -->
+                                <section id="mozzaContact" class="sub_contact">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                METAROCK과 함께하고 싶으신가요?
+                                            </h4>
+                                            <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">
+                                                CONTACT US
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            
+                            <!-- 푸터 영역 -->
+                            <div id="footer-include"></div>
+                            <script>
+                                fetch('footer.html')
+                                    .then(res => res.text())
+                                    .then(data => {
+                                        document.getElementById('footer-include').innerHTML = data;
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

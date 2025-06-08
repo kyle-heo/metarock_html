@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="/thumbnail/thumbnail.png?ver=20220421">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="/thumbnail/thumbnail.png?ver=20220623">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <title>METAROCK</title>
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    <link rel="icon" href="/images/logo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="/css/common.css?ver=20220713">
+    <link rel="stylesheet" href="/css/style.css?ver=20231212">
+    <link rel="stylesheet" href="/css/responsive.css?ver=20231212">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/suneditor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/plugins.js?ver=20231212"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/js.js?ver=20231212"></script>
+    <script src="/js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+<noscript>이 사이트를 사용하려면 JavaScript를 활성화해야 합니다.</noscript>
+<div id="root">
+    <div class="App">
+        <div class="wrap">
+            <div>
+                <div style="position: relative;">
+                    <div id="header-include"></div>
+                    <script>
+                        fetch('header.html')
+                            .then(res => res.text())
+                            .then(data => {
+                                document.getElementById('header-include').innerHTML = data;
+                            });
+                    </script>
+                    <div id="popup_layer" class="container"></div>
+                    <div class="wrap">
+                        <div id="content2"><section id="contactMain" class="sub_main"><div class="container"><div class="row"><div class="col-12"><p class="title wow fadeInDown" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Contact Us</p><h3 class="wow fadeInDown" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">METAROCK은<br>언제나 열려있습니다.</h3></div></div></div></section><section id="contactCont"><div class="container"><div class="row"><div class="col-lg-8 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;"><dl><dt>서울 강남구 선릉로 703 HS TOWER 8F, <br>주식회사 메타록</dt><dd>8F, 703, seolleung-ro, Gangnam-gu, Seoul, Korea</dd></dl></div><div class="col-lg-4 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;"><img src="/images/logo/logo_contact.png" alt="METAROCK"><dl class="tel clear"><dt>Tel.</dt><dd>02-515-0630</dd></dl><dl class="mail clear"><dt>E-Mail.</dt><dd><a href="mailto:biz@metarock.co.kr" title="이메일">biz@metarock.co.kr</a></dd></dl></div><div class="col-12 wow fadeInUp" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.5869079069375!2d127.03855221611423!3d37.5176600346819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca475700518d7%3A0x4cd448203eb5cddb!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDshKDrponroZwgNzAz!5e0!3m2!1sko!2skr!4v1646706896786!5m2!1sko!2skr" title="metarock_map" width="100%" height="450" loading="lazy" style="border: 0px;"></iframe></div></div></div></section></div>
+                        <div id="footer-include"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('footer-include').innerHTML = data;
+                                });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 
