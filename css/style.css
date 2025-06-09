@@ -1908,6 +1908,75 @@ body {
     z-index: 99;
 }
 
+/* #metaverseVideo */
+.metaverse-video-responsive {
+position: relative;
+display: inline-block;
+width: 100%;
+max-width: 1280px; /* 기존 640px의 2배 */
+aspect-ratio: 16/9;
+margin: 0 auto;
+}
+
+.video-thumb-img,
+.video-player {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 16px;
+display: block;
+}
+
+#metaverse-video {
+display: none;
+}
+
+.video-play-btn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: rgba(0,0,0,0.6);
+border: none;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+z-index: 2;
+color: #fff;
+}
+
+@media (max-width: 1300px) {
+.metaverse-video-responsive {
+    max-width: 98vw;
+}
+}
+@media (max-width: 768px) {
+.metaverse-video-responsive {
+    max-width: 100vw;
+    border-radius: 0;
+}
+.video-thumb-img,
+.video-player {
+    border-radius: 0;
+}
+.video-play-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+}
+}
+
+#metaverseVideo {
+margin-bottom: 140px;
+}
+/* #metaFeature {
+margin-top: 40px;
+} */
+
 /* #metaFeature */
 #metaFeature h4 {
     margin-bottom: 0;
@@ -3164,3 +3233,67 @@ margin-right: 15px;
     height: 500px;
 }
 
+/* Heaven 동영상 반응형 및 플레이 버튼 스타일 */
+.heaven-video-responsive {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 1280px;
+  aspect-ratio: 16/9;
+  margin: 0 auto 60px auto;
+}
+
+.video-thumb-img,
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+#heaven-video {
+  display: none;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  color: #fff;
+}
+
+@media (max-width: 1300px) {
+  .heaven-video-responsive {
+    max-width: 98vw;
+  }
+}
+@media (max-width: 768px) {
+  .heaven-video-responsive {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+  .video-thumb-img,
+  .video-player {
+    border-radius: 0;
+  }
+  .video-play-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+#heavenVideo {
+    margin-bottom: 140px;
+}

@@ -87,6 +87,49 @@
                                 </div>
                             </section>
 
+                            <!-- DotCube Protocol 동영상 섹션 -->
+                            <section id="metaverseVideo" class="sub_main">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-center">
+                                            <div class="video-wrapper metaverse-video-responsive">
+                                                <!-- 썸네일 이미지 (동영상 첫 프레임이나 원하는 이미지) -->
+                                                <img id="video-thumbnail" src="images/metaverse/dcp_video_thumb.png" alt="DotCube Protocol Video" style="width:100%; display:block; border-radius:16px;">
+                                                <!-- 플레이 버튼 -->
+                                                <button id="play-video-btn" style="
+                                                position:absolute; 
+                                                top:50%; left:50%; 
+                                                transform:translate(-50%,-50%);
+                                                background:rgba(0,0,0,0.6);
+                                                border:none;
+                                                border-radius:50%;
+                                                width:90px; height:90px;
+                                                display:flex; align-items:center; justify-content:center;
+                                                cursor:pointer;
+                                                z-index:2;
+                                                ">
+                                                <i class="fa fa-play fa-3x" style="color:white;"></i>
+                                                </button>
+                                                <!-- 비디오 태그 (초기에는 숨김) -->
+                                                <video id="metaverse-video" width="100%" style="display:none; border-radius:16px;" controls poster="images/metaverse/dcp_video_thumb.jpg">
+                                                <source src="video/DCP_intro_short.mp4" type="video/mp4">
+                                                브라우저가 video 태그를 지원하지 않습니다.
+                                                </video>
+                                                <script>
+                                                    $(function() {
+                                                      $('#play-video-btn').on('click', function() {
+                                                        $('#video-thumbnail').hide();
+                                                        $(this).hide();
+                                                        $('#metaverse-video').show()[0].play();
+                                                      });
+                                                    });
+                                                  </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            
                             <!-- DotCube Protocol 소개 섹션 -->
                             <section id="metaFeature" class="sub_cont">
                                 <div class="container">

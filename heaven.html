@@ -115,6 +115,35 @@
                                     </div>
                                 </section>
 
+                                <!-- Heaven 동영상 섹션 -->
+                                <section id="heavenVideo" class="sub_main">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 text-center">
+                                                <div class="video-wrapper heaven-video-responsive">
+                                                    <img id="heaven-video-thumbnail" src="images/heaven/heaven_video_thumb.png" alt="Heaven Video" class="video-thumb-img">
+                                                    <button id="heaven-play-video-btn" class="video-play-btn">
+                                                        <i class="fa fa-play fa-3x"></i>
+                                                    </button>
+                                                    <video id="heaven-video" class="video-player" controls poster="images/heaven/heaven_video_thumb.jpg">
+                                                        <source src="video/heaven_3rd_play.mp4" type="video/mp4">
+                                                        브라우저가 video 태그를 지원하지 않습니다.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <script>
+                                $(function() {
+                                    $('#heaven-play-video-btn').on('click', function() {
+                                        $('#heaven-video-thumbnail').hide();
+                                        $(this).hide();
+                                        $('#heaven-video').show()[0].play();
+                                    });
+                                });
+                                </script>
+
                                 <!-- 특징 섹션 -->
                                 <section id="feature" class="sub_cont">
                                     <div class="container">
