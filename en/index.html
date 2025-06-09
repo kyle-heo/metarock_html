@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <!-- 기본 메타 태그 -->
+    <!-- Basic Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
     <meta name="keywords" content="Blockchain, Metaverse">
     
-    <!-- 오픈그래프 메타 태그 -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:url" content="http://www.metarock.co.kr/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="METAROCK">
     <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
-    <meta property="og:image" content="/thumbnail/thumbnail.png?ver=20220421">
+    <meta property="og:image" content="../thumbnail/thumbnail.png?ver=20220421">
     
-    <!-- 트위터 카드 메타 태그 -->
+    <!-- Twitter Card Meta Tags -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="METAROCK">
     <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
-    <meta property="twitter:image" content="thumbnail/thumbnail.png?ver=20220623">
+    <meta property="twitter:image" content="../thumbnail/thumbnail.png?ver=20220623">
     
-    <!-- 캐시 컨트롤 -->
+    <!-- Cache Control -->
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
     
     <title>METAROCK</title>
-    <link rel="icon" href="images/logo/favicon.png">
+    <link rel="icon" href="../images/logo/favicon.png">
     
-    <!-- 폰트 -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <!-- 외부 라이브러리 CSS -->
+    <!-- External Libraries CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- 커스텀 CSS -->
-    <link rel="stylesheet" href="css/animate.css?ver=20221129">
-    <link rel="stylesheet" href="css/common.css?ver=20220713">
-    <link rel="stylesheet" href="css/style.css?ver=20231212">
-    <link rel="stylesheet" href="css/responsive.css?ver=20231212">
-    <link rel="stylesheet" href="css/suneditor.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <link rel="stylesheet" href="../css/suneditor.css">
     
-    <!-- 외부 라이브러리 JavaScript -->
+    <!-- External Libraries JavaScript -->
     <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- 커스텀 JavaScript -->
-    <script src="js/plugins.js?ver=20231212"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/js.js?ver=20231212"></script>
-    <script src="js/scroll.js?ver=20231212"></script>
+    <!-- Custom JavaScript -->
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
     
-    <!-- MTT 스타일 -->
+    <!-- MTT Style -->
     <style id="mttstyle">
         #mttContainer {
             left: 0 !important;
@@ -132,7 +132,7 @@
         }
     </style>
     
-    <!-- MTT 자막 스타일 -->
+    <!-- MTT Subtitle Style -->
     <style id="mttstyleSubtitle">
         #ytp-caption-window-container .ytp-caption-segment {
             cursor: text !important;
@@ -177,37 +177,37 @@
     </style>
 </head>
 <body>
-    <noscript>이 사이트를 사용하려면 JavaScript를 활성화해야 합니다.</noscript>
+    <noscript>JavaScript must be enabled to use this site.</noscript>
     
-    <!-- 루트 컨테이너 -->
+    <!-- Root Container -->
     <div id="root">
         <div class="App">
             <div class="wrap">
-                <!-- 상단 이동 버튼 -->
+                <!-- Top Button -->
                 <button title="top" class="btn_top" style="display: none; opacity: 1;">
                     <i class="far fa-chevron-double-up" aria-hidden="true"></i>
                 </button>
                 
-                <!-- 메인 컨텐츠 영역 -->
+                <!-- Main Content Area -->
                 <div>
                     <div style="position: relative;">
-                        <!-- 헤더 영역 -->
+                        <!-- Header Area -->
                         <div id="header-include"></div>
                         <script>
-                            fetch('header.html')
+                            fetch('../en/header.html')
                                 .then(res => res.text())
                                 .then(data => {
                                     document.getElementById('header-include').innerHTML = data;
                                 });
                         </script>
                         
-                        <!-- 팝업 레이어 -->
+                        <!-- Popup Layer -->
                         <div id="popup_layer" class="container"></div>
                         
-                        <!-- 컨텐츠 래퍼 -->
+                        <!-- Content Wrapper -->
                         <div class="wrap">
                             <div id="content">
-                                <!-- 메인 비주얼 섹션 -->
+                                <!-- Main Visual Section -->
                                 <section id="main" background>
                                     <div class="container">
                                         <div class="row">
@@ -217,8 +217,8 @@
                                                     Metarock opens it.
                                                 </h3>
                                                 <p class="wow fadeInDown" data-wow-delay="0.8s">
-                                                    METAROCK은 DotCube Protocol을 통해 <br>
-                                                    다가올 AI 시대에 새롭고 거대한 패러다임을 이끌어갑니다.
+                                                    METAROCK leads a new and massive paradigm <br>
+                                                    in the coming AI era through DotCube Protocol.
                                                 </p>
                                                 <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">
                                                     CONTACT US
@@ -228,89 +228,87 @@
                                     </div>
                                 </section>
 
-                                <!-- 서비스 소개 섹션 -->
+                                <!-- Service Introduction Section -->
                                 <section id="service">
                                     <div class="container">
-                                        <!-- 섹션 타이틀 -->
+                                        <!-- Section Title -->
                                         <div class="row">
                                             <div class="col-12">
                                                 <p class="title wow fadeInDown" data-wow-delay="0.2s">Our Services</p>
-                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">METAROCK 서비스 모델</h4>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">METAROCK Service Model</h4>
                                             </div>
                                         </div>
 
-                                         <!-- DotCube Protocol 서비스 -->
+                                        <!-- DotCube Protocol Service -->
                                         <div class="row fir">
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.6s">
-                                                <img src="images/service/service2-1.png" alt="메타버스 관련 비즈니스">
+                                                <img src="../images/service/service2.png" alt="Metaverse Related Business">
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.7s">
                                                 <dl>
-                                                    <dt>세계 최초의 탈중앙화 AI 메타버스, DotCube Protocol(DCP)</dt>
+                                                    <dt>World's First Decentralized AI Metaverse, DotCube Protocol(DCP)</dt>
                                                     <dd>
-                                                        DotCube Protocol은 새로운 AI 메타버스의 표준으로 개인과 기업, 기관, 국가가 원하는 대로 메타버스를 구축하고
-                                                        그 만들어진 메타버스를 연결해 시간과 공간을 초월한 네트워크 세상을 만들어 갑니다.
-                                                        누구나 빠르고 저렴하게 메타버스를 만들고 서비스할 수 있습니다.
+                                                        DotCube Protocol is the new standard for AI metaverse where individuals, businesses, institutions, and nations can build their own metaverse as desired and connect these created metaverses to form a network world that transcends time and space.
+                                                        Anyone can create and service their metaverse quickly and affordably.
                                                     </dd>
                                                     <dd>
-                                                        <a title="메타버스" class="btn_more" href="metaverse.html">더 알아보기</a>
+                                                        <a title="Metaverse" class="btn_more" href="metaverse.html">Learn More</a>
                                                     </dd>
                                                 </dl>
                                             </div>
                                         </div>
 
-                                        <!-- 2WinChance 서비스 -->
+                                        <!-- 2WinChance Service -->
                                         <div class="row cross sec">
                                             <div class="col-lg-6 col-md-12 col-sm-12 right wow fadeInRight" data-wow-delay="0.8s">
-                                                <img src="images/service/service1.png" alt="2WinChance, 세계최고의 '컨테스트 베팅' 플랫폼">
+                                                <img src="../images/service/service1.png" alt="2WinChance, World's Best Contest Platform">
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.9s">
                                                 <dl>
-                                                    <dt>2WinChance, 국내 최초 합법 판타지스포츠게임 중심의 종합게임 플랫폼</dt>
+                                                    <dt>2WinChance, Korea's First Legal Fantasy Sports Game-Centered Comprehensive Gaming Platform</dt>
                                                     <dd>
-                                                        새로운 개념의 판타지 스포트게임인 Winnerpick을 중심으로 다양한 승부예측게임과 보드 게임 등
-                                                        다양한 장르의 P2E 게임을 만들고 서비스합니다.
+                                                        Centered around Winnerpick, a new concept fantasy sports game, we create and service various prediction games, board games, and P2E games across different genres.
                                                     </dd>
                                                     <dd>
-                                                        <a title="투윈챈스" class="btn_more" href="game.html">더 알아보기</a>
+                                                        <a title="2WinChance" class="btn_more" href="game.html">Learn More</a>
                                                     </dd>
                                                 </dl>
                                             </div>
                                         </div>
 
-                                        <!-- Heaven 서비스 -->
+                                        <!-- Heaven Service -->
                                         <div class="row thi">
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="1.0s">
-                                                <img src="images/service/service3.png" alt="Heaven, 차세대 서바이벌 배틀 게임의 표준">
+                                                <img src="../images/service/service3.png" alt="Heaven, Setting the Standard for Next-Generation Survival Battle Games">
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="1.1s">
                                                 <dl>
-                                                    <dt>Heaven, 차세대 서바이벌 배틀 게임의 표준</dt>
+                                                    <dt>Heaven, Setting the Standard for Next-Generation Survival Battle Games</dt>
                                                     <dd>
-                                                        글로벌 시장을 목표로 한 새로운 개념의 배틀 게임으로
-                                                        매력적인 캐릭터와 스토리로 몰입감이 풍부한 Aeon Of Strife(AOS) 게임입니다.
+                                                        A new concept battle game targeting the global market,
+                                                        it's an Aeon Of Strife (AOS) game with immersive gameplay featuring attractive characters and story.
                                                     </dd>
                                                     <dd>
-                                                        <a title="헤븐" class="btn_more" href="heaven.html">더 알아보기</a>
+                                                        <a title="Heaven" class="btn_more" href="heaven.html">Learn More</a>
                                                     </dd>
                                                 </dl>
                                             </div>
                                         </div>
 
-                                        <!-- Mozza & Sali 서비스 -->
+                                        <!-- Mozza & Sali Service -->
                                         <div class="row cross for">
                                             <div class="col-lg-6 col-md-12 col-sm-12 right wow fadeInRight" data-wow-delay="1.2s">
-                                                <img src="images/service/service4.png" alt="Mozza & Sali Full CG 3D Animation">
+                                                <img src="../images/service/service4.png" alt="Mozza & Sali Full CG 3D Animation">
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="1.3s">
                                                 <dl>
-                                                    <dt>Mozza & Sali, 글로벌 애니메이션 프로젝트</dt>
+                                                    <dt>Mozza & Sali, Global Animation Project</dt>
                                                     <dd>
-                                                        메타락의 대표 캐릭터 모짜와 살리의 이야기를 담은 3D 애니메이션으로
-                                                        글로벌 시장을 목표로 제작되고 있습니다.
+                                                        A 3D animation featuring the story of Metarock's main characters Mozza and Sali,
+                                                        being produced for the global market.
                                                     </dd>
                                                     <dd>
-                                                        <a title="모짜와살리" class="btn_more" href="mozza.html">더 알아보기</a>
+                                                        <a title="Mozza and Sali" class="btn_more" href="mozza.html">Learn More</a>
                                                     </dd>
                                                 </dl>
                                             </div>
@@ -327,7 +325,7 @@
                                         </div>
                                         <div class="row"></div>
                                         <div class="col-12 wow fadeInUp" data-wow-delay="0.9s">
-                                            <a class="btn_more" href="news.html">더 보기<i class="fal fa-plus" aria-hidden="true"></i></a>
+                                            <a class="btn_more" href="news.html">View More<i class="fal fa-plus" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
                                 </section>
@@ -335,7 +333,7 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">메타록에 문의사항이 있으신가요?</h4>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">Do you have any questions for Metarock?</h4>
                                                 <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">CONTACT US</a>
                                             </div>
                                         </div>
@@ -349,10 +347,10 @@
         </div>
     </div>
 
-    <!-- 푸터 영역 -->
+    <!-- Footer Area -->
     <div id="footer-include"></div>
     <script>
-        fetch('footer.html')
+        fetch('../en/footer.html')
             .then(res => res.text())
             .then(data => {
                 document.getElementById('footer-include').innerHTML = data;

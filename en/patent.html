@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="../thumbnail/thumbnail.png?ver=20220421">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="../thumbnail/thumbnail.png?ver=20220623">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    
+    <title>METAROCK</title>
+    <link rel="icon" href="../images/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- External Libraries CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <link rel="stylesheet" href="../css/suneditor.css">
+    
+    <!-- Patent List Style -->
+    <style>
+        .patent-list {
+            margin-top: 2rem;
+        }
+
+        .patent-item {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .patent-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .patent-item h5 {
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .patent-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .patent-item ul li {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .patent-item ul li strong {
+            color: #333;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .patent-item {
+                padding: 1.5rem;
+            }
+            
+            .patent-item h5 {
+                font-size: 1rem;
+            }
+            
+            .patent-item ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    
+    <!-- External Libraries JavaScript -->
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+    <noscript>JavaScript must be enabled to use this site.</noscript>
+    
+    <!-- Root Container -->
+    <div id="root">
+        <div class="App">
+            <div class="wrap">
+                <!-- Main Content Area -->
+                <div>
+                    <div style="position: relative;">
+                        <!-- Header Area -->
+                        <div id="header-include"></div>
+                        <script>
+                            fetch('header.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('header-include').innerHTML = data;
+                                });
+                        </script>
+                        
+                        <!-- Popup Layer -->
+                        <div id="popup_layer" class="container"></div>
+                        
+                        <!-- Content Wrapper -->
+                        <div class="wrap">
+                            <!-- Main Content -->
+                            <div id="content2">
+                                <!-- Patents/Licenses Main Section -->
+                                <section id="patentMain" class="sub_main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    METAROCK · Patents & Licenses
+                                                </p>
+                                                <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Metarock Patents and Licenses
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Patents/Licenses Content Section -->
+                                <section id="patent" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <!-- Patents Status -->
+                                            <div class="col-12">
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Current Patents
+                                                </h4>
+                                            </div>
+                                            
+                                            <!-- Patent Image List -->
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.6s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent1.png" alt="AI-based Data Processing System">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent2.png" alt="Event-linked Education Service System">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="1.0s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent3.png" alt="Customized Information Data Center System">
+                                                </div>
+                                            </div>
+
+                                            <!-- Additional Patent List -->
+                                            <div class="col-12 mt-5">
+                                                <div class="patent-list">
+                                                    <!-- Patent 1 -->
+                                                    <div class="patent-item wow fadeInUp" data-wow-delay="0.4s">
+                                                        <div class="patent-content">
+                                                            <h5>Open Protocol Cube System and Operation Method for Registering and Utilizing Different Protocol Items</h5>
+                                                            <ul>
+                                                                <li><strong>Application Number:</strong> 10-2023-0034199</li>
+                                                                <li><strong>Filing Date:</strong> March 15, 2023</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Patent 2 -->
+                                                    <div class="patent-item wow fadeInUp" data-wow-delay="0.5s">
+                                                        <div class="patent-content">
+                                                            <h5>Open Protocol Cube System with Automatic Transmission Compression Rate Adjustment and Its Operation Method</h5>
+                                                            <ul>
+                                                                <li><strong>Application Number:</strong> 10-2023-0028653</li>
+                                                                <li><strong>Filing Date:</strong> March 3, 2023</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Patent 3 -->
+                                                    <div class="patent-item wow fadeInUp" data-wow-delay="0.6s">
+                                                        <div class="patent-content">
+                                                            <h5>Metaverse System Management Service System and Operation Method Using Open Protocol DotCuber</h5>
+                                                            <ul>
+                                                                <li><strong>Application Number:</strong> 10-2023-0033913</li>
+                                                                <li><strong>Filing Date:</strong> March 15, 2023</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Licenses Status -->
+                                            <div class="col-12 license">
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Current Licenses
+                                                </h4>
+                                            </div>
+                                            
+                                            <!-- License Image List -->
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="1.1s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent4.png" alt="Research Institute Certification">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="1.2s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent5.png" alt="Game Distribution Business Registration">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="1.3s">
+                                                <div class="thumb">
+                                                    <img src="../images/patent/patent6.png" alt="Telecommunication Sales Registration">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            
+                            <!-- Footer Area -->
+                            <div id="footer-include"></div>
+                            <script>
+                                fetch('footer.html')
+                                    .then(res => res.text())
+                                    .then(data => {
+                                        document.getElementById('footer-include').innerHTML = data;
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="/thumbnail/thumbnail.png?ver=20220421">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="/thumbnail/thumbnail.png?ver=20220623">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    
+    <title>METAROCK</title>
+    <link rel="icon" href="../images/logo/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- External Libraries CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <link rel="stylesheet" href="../css/suneditor.css">
+    
+    <!-- External Libraries JavaScript -->
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+    <noscript>JavaScript must be enabled to use this site.</noscript>
+    
+    <!-- Root Container -->
+    <div id="root">
+        <div class="App">
+            <div class="wrap">
+                <!-- Main Content Area -->
+                <div>
+                    <div style="position: relative;">
+                        <!-- Header Area -->
+                        <div id="header-include"></div>
+                        <script>
+                            fetch('/en/header.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('header-include').innerHTML = data;
+                                });
+                        </script>
+                        
+                        <!-- Popup Layer -->
+                        <div id="popup_layer" class="container"></div>
+                        
+                        <!-- Content Wrapper -->
+                        <div class="wrap">
+                            <!-- Main Content -->
+                            <div id="content">
+                                <!-- Heaven Main Section -->
+                                <section id="heavenMain" class="sub_main">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    BUSINESS · Heaven
+                                                </p>
+                                                <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Heaven,<br>
+                                                    Setting the Standard for Next-Generation Survival Battle Games
+                                                </h3>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.2s">
+                                                    Heaven is an Aeon Of Strife (AOS) game inspired by globally popular games 
+                                                    like DOTA/CHAOS.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Main Slider -->
+                                        <div class="swiper swiper-fade">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                                <div class="swiper-slide"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Heaven Video Section -->
+                                <section id="heavenVideo" class="sub_main">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-12 text-center">
+                                                <div class="video-wrapper heaven-video-responsive">
+                                                    <img id="heaven-video-thumbnail" src="../images/heaven/heaven_video_thumb.png" alt="Heaven Video" class="video-thumb-img">
+                                                    <button id="heaven-play-video-btn" class="video-play-btn">
+                                                        <i class="fa fa-play fa-3x"></i>
+                                                    </button>
+                                                    <video id="heaven-video" class="video-player" controls poster="../images/heaven/heaven_video_thumb.jpg">
+                                                        <source src="../video/heaven_3rd_play.mp4" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <script>
+                                $(function() {
+                                    $('#heaven-play-video-btn').on('click', function() {
+                                        $('#heaven-video-thumbnail').hide();
+                                        $(this).hide();
+                                        $('#heaven-video').show()[0].play();
+                                    });
+                                });
+                                </script>
+
+                                <!-- Feature Section -->
+                                <section id="feature" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Our Feature
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Heaven, an E-Sports Game
+                                                </h4>
+                                                <p class="text wow fadeInDown" data-wow-delay="0.6s">
+                                                    Fast and precise control, combined with split-second instincts, determine victory or defeat.
+                                                </p>
+                                            </div>
+                                            
+                                            <!-- Feature List -->
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <div class="thumb">
+                                                    <img src="../images/heaven/feature1.png" alt="E-Sports Tournament Hosting">
+                                                </div>
+                                                <dl>
+                                                    <dt>E-Sports Tournament Hosting</dt>
+                                                    <dd>
+                                                        Promoting E-Sports growth and encouraging active player participation 
+                                                        through tournament organization
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.0s">
+                                                <div class="thumb">
+                                                    <img src="../images/heaven/feature2.png" alt="Full-Scale P2E Game">
+                                                </div>
+                                                <dl>
+                                                    <dt>Full-Scale P2E Game</dt>
+                                                    <dd>
+                                                        Support for NFT conversion of personally owned items and 
+                                                        trading through our marketplace
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="1.2s">
+                                                <div class="thumb">
+                                                    <img src="../images/heaven/feature3.png" alt="Global Gaming Platform Steam Launch">
+                                                </div>
+                                                <dl>
+                                                    <dt>Global Gaming Platform Steam Launch</dt>
+                                                    <dd>
+                                                        Planning game release through Steam for global expansion 
+                                                        and improved accessibility
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Special Elements Section -->
+                                <section id="special" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Special Factor
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    Heaven's Differentiating Points
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Action System -->
+                                        <div class="row fir">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.2s">
+                                                <img src="../images/heaven/special1.gif" alt="Heaven: Action">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="0.4s">
+                                                <dl>
+                                                    <dt>Heaven: Action</dt>
+                                                    <dd>Implementation of various motions to showcase characters' spectacular actions</dd>
+                                                    <dd>Over 70 different motion expressions per character</dd>
+                                                    <dd>
+                                                        Expression of basic attack motions, special attacks, and 
+                                                        combo attack motions for each character's action dynamics
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Skill System -->
+                                        <div class="row sec">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 right wow fadeInRight" data-wow-delay="0.6s">
+                                                <img src="../images/heaven/special2.gif" alt="Heaven: Skill System">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                                <dl>
+                                                    <dt>Heaven: Skill System</dt>
+                                                    <dd>
+                                                        Character-based game developed with 30 unique and independent 
+                                                        character personalities
+                                                    </dd>
+                                                    <dd>
+                                                        Each character has their own story, and character relationships 
+                                                        are reflected in-game for strategic character combinations
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Map System -->
+                                        <div class="row thi">
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay="1.0s">
+                                                <img src="../images/heaven/special3.gif" alt="Heaven: Map">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="1.2s">
+                                                <dl>
+                                                    <dt>Heaven: Map</dt>
+                                                    <dd>
+                                                        Planning to include various strategic game play options 
+                                                        through different maps
+                                                    </dd>
+                                                    <dd>
+                                                        Maps have 3 basic invasion paths, and some maps have 
+                                                        mission options for strategic game play
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Gallery Section -->
+                                <section id="gallery" class="sub_cont">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                    Gallery
+                                                </p>
+                                                <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                    In-Game Images
+                                                </h4>
+                                                <ul>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                                        <img src="../images/heaven/gallery1.png" alt="In-Game Image1">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.7s">
+                                                        <img src="../images/heaven/gallery2.png" alt="In-Game Image2">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                                        <img src="../images/heaven/gallery3.png" alt="In-Game Image3">
+                                                    </li>
+                                                    <li class="wow fadeInUp" data-wow-delay="0.9s">
+                                                        <img src="../images/heaven/gallery4.png" alt="In-Game Image4">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- Contact Section -->
+                                <section id="heavenContact" class="sub_contact">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                Want to learn more about Heaven?
+                                            </h4>
+                                            <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">
+                                                CONTACT US
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            
+                            <!-- Footer Area -->
+                            <div id="footer-include"></div>
+                            <script>
+                                fetch('/en/footer.html')
+                                    .then(res => res.text())
+                                    .then(data => {
+                                        document.getElementById('footer-include').innerHTML = data;
+                                    });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

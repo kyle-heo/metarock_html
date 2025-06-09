@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="../thumbnail/thumbnail.png?ver=20220421">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="../thumbnail/thumbnail.png?ver=20220623">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <title>METAROCK</title>
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    <link rel="icon" href="../images/logo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/suneditor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
+</head>
+<body>
+<noscript>JavaScript must be enabled to use this site.</noscript>
+<div id="root">
+    <div class="App">
+        <div class="wrap">
+            <div>
+                <div style="position: relative;">
+                    <div id="header-include"></div>
+                    <script>
+                        fetch('header.html')
+                            .then(res => res.text())
+                            .then(data => {
+                                document.getElementById('header-include').innerHTML = data;
+                            });
+                    </script>
+                    <div id="popup_layer" class="container"></div>
+                    <div class="wrap">
+                        <div id="content">
+                            <!-- Metaverse Main Section -->
+                            <section id="metaverseMain" class="sub_main">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                BUSINESS · DotCube Protocol
+                                            </p>
+                                            <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                Creating a New AI Network<br>
+                                                through DotCube Protocol.
+                                            </h3>
+                                            <p class="text wow fadeInDown" data-wow-delay="0.2s">
+                                                METAROCK DotCube Protocol
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper swiper-fade swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide swiper-slide-prev"></div>
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-active"></div>
+                                            <div class="swiper-slide swiper-slide-next"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- DotCube Protocol Video Section -->
+                            <section id="metaverseVideo" class="sub_main">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 text-center">
+                                            <div class="video-wrapper metaverse-video-responsive">
+                                                <!-- Thumbnail Image -->
+                                                <img id="video-thumbnail" src="../images/metaverse/dcp_video_thumb.png" alt="DotCube Protocol Video" style="width:100%; display:block; border-radius:16px;">
+                                                <!-- Play Button -->
+                                                <button id="play-video-btn" style="
+                                                position:absolute; 
+                                                top:50%; left:50%; 
+                                                transform:translate(-50%,-50%);
+                                                background:rgba(0,0,0,0.6);
+                                                border:none;
+                                                border-radius:50%;
+                                                width:90px; height:90px;
+                                                display:flex; align-items:center; justify-content:center;
+                                                cursor:pointer;
+                                                z-index:2;
+                                                ">
+                                                <i class="fa fa-play fa-3x" style="color:white;"></i>
+                                                </button>
+                                                <!-- Video Tag (Initially Hidden) -->
+                                                <video id="metaverse-video" width="100%" style="display:none; border-radius:16px;" controls poster="../images/metaverse/dcp_video_thumb.jpg">
+                                                <source src="../video/DCP_intro_short.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                                </video>
+                                                <script>
+                                                    $(function() {
+                                                      $('#play-video-btn').on('click', function() {
+                                                        $('#video-thumbnail').hide();
+                                                        $(this).hide();
+                                                        $('#metaverse-video').show()[0].play();
+                                                      });
+                                                    });
+                                                  </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- DotCube Protocol Introduction Section -->
+                            <section id="metaFeature" class="sub_cont">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                World's First Decentralized Metaverse - DotCube Protocol (DCP)
+                                            </p>
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                Using our self-developed new internet DCP, all users can create their own metaverse Cube for free.
+                                            </h4>
+                                            <p class="text wow fadeInDown" data-wow-delay="0.6s">
+                                                Individuals can create their own MyCube, businesses can create BizCube for corporate use, and public institutions can create PubCube. We provide free support tools (Map Editor, Avatar Editor, etc.) for convenient metaverse construction, allowing users to create their own avatars and Cubes.
+                                            </p>
+                                            <p class="text wow fadeInDown" data-wow-delay="0.7s">
+                                                These various Cubes are interconnected through DCP, enabling unrestricted movement between clients and free expansion.
+                                            </p>
+                                        </div>
+                                        
+                                        <!-- MyCube -->
+                                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.8s">
+                                            <dl>
+                                                <dt>
+                                                    Personal Metaverse - MyCube
+                                                </dt>
+                                                <dd>
+                                                    A personal metaverse where individuals<br>
+                                                    can create and customize their own space<br>
+                                                    Avatar customization, space decoration, etc.
+                                                </dd>
+                                            </dl>
+                                            <div class="thumb">
+                                                <img src="../images/metaverse/dcp1.png" alt="MyCube Example">
+                                            </div>
+                                            <div class="thumb mt-4">
+                                                <img src="../images/metaverse/dcp4.png" alt="Additional MyCube Example">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- BizCube -->
+                                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0.9s">
+                                            <dl>
+                                                <dt>
+                                                    Business Metaverse - BizCube
+                                                </dt>
+                                                <dd>
+                                                    A metaverse space used by businesses<br>
+                                                    for their operations<br>
+                                                    Showrooms, exhibition halls, meeting rooms, etc.
+                                                </dd>
+                                            </dl>
+                                            <div class="thumb">
+                                                <img src="../images/metaverse/dcp2.png" alt="BizCube Example">
+                                            </div>
+                                            <div class="thumb mt-4">
+                                                <img src="../images/metaverse/dcp5.png" alt="Additional BizCube Example">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- PubCube -->
+                                        <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="1.0s">
+                                            <dl>
+                                                <dt>
+                                                    Public Institution Metaverse - PubCube
+                                                </dt>
+                                                <dd>
+                                                    A metaverse space used by public institutions<br>
+                                                    for service provision<br>
+                                                    Education, civil services, public services, etc.
+                                                </dd>
+                                            </dl>
+                                            <div class="thumb">
+                                                <img src="../images/metaverse/dcp3.png" alt="PubCube Example">
+                                            </div>
+                                            <div class="thumb mt-4">
+                                                <img src="../images/metaverse/dcp6.png" alt="Additional PubCube Example">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Vision Section -->
+                            <section id="vision" class="sub_cont">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.7s">
+                                                Metaverse Network based on DotCube Protocol
+                                            </p>
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.8s">
+                                                Metaverse Network based on DotCube Protocol
+                                            </h4>
+                                            <img src="../images/metaverse/ecosystem.png" 
+                                                alt="Metaverse Network based on DotCube Protocol" 
+                                                class="pc_img wow fadeInUp" 
+                                                data-wow-delay="0.6s">
+                                            <img src="../images/metaverse/ecosystem_m.png" 
+                                                alt="Metaverse Network based on DotCube Protocol" 
+                                                class="m_img wow fadeInUp animated" 
+                                                data-wow-delay="0.6s">
+                                            <p class="text wow fadeInUp" data-wow-delay="0.8s">
+                                                Metarock aims to create new value by integrating metaverse into various industries.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Methodology Section -->
+                            <section id="methodology" class="sub_cont">
+                                <div class="container">
+                                    <div class="row" style="justify-content: center;">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                Direction of DotCube Protocol
+                                            </p>
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                Direction of DotCube Protocol
+                                            </h4>
+                                        </div>
+                                        <div class="dotcube_direction">
+                                            <!-- Current Metaverse Situation -->
+                                            <ul class="dotcube1 col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
+                                                <li class="tit fadeInUp">
+                                                    Current Metaverse Situation
+                                                </li>
+                                                <li>
+                                                    Platform-centric service user network<br class="pc">
+                                                    focused on platform spaces
+                                                </li>
+                                                <li>
+                                                    Mega-service transformation of large platforms 
+                                                    <span style="margin-top: -44px;">
+                                                        (Monopolistic centralization in progress)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    Independent services' platform orientation and isolation
+                                                    <span style="margin-top: -20px;">
+                                                        (Isolation due to entry barriers and marketing limitations for small-scale services attempting platformization)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    Limited user experience due to platform constraints
+                                                    <span style="margin-top: -44px;">
+                                                        (Limited technical specifications and space diversity)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    Business expansion limitations due to<br class="pc">
+                                                    centralized platform services
+                                                </li>
+                                            </ul>
+
+                                            <span class="arrow">
+                                                <img src="../images/metaverse/caret-right-solid2.svg" 
+                                                    alt="right-arrow" 
+                                                    class="wow arrow_led animated" 
+                                                    data-wow-delay="0.6s">
+                                            </span>
+
+                                            <!-- Metaverse Service Goals -->
+                                            <ul class="dotcube2 col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
+                                                <li class="tit fadeInUp">
+                                                    Metaverse Service Goals
+                                                </li>
+                                                <li>
+                                                    Service structure for enhanced user experience
+                                                </li>
+                                                <li>
+                                                    Decentralized service based on Web3.0<br class="pc">
+                                                    as a representative service framework
+                                                </li>
+                                                <li>
+                                                    Need for communication and sharing<br class="pc">
+                                                    through networking between individual services
+                                                </li>
+                                                <li>
+                                                    Enhanced user experience utilizing infrastructure such as<br class="pc">
+                                                    5G networks, computing power, and diverse user hardware
+                                                </li>
+                                                <li>
+                                                    Metaverse service as a business platform<br class="pc">
+                                                    capable of incorporating Web 3.0 services and blockchain ecosystem
+                                                </li>
+                                            </ul>
+
+                                            <div class="arrow_g" style="align-self: center;">
+                                                <span class="arrow">
+                                                    <img src="../images/metaverse/caret-right-solid2.svg" 
+                                                        alt="right-arrow" 
+                                                        class="wow arrow_led animated" 
+                                                        data-wow-delay="0.9s">
+                                                </span>
+                                                <span class="arrow">
+                                                    <img src="../images/metaverse/caret-right-solid.svg" 
+                                                        alt="right-arrow" 
+                                                        class="wow arrow_led animated" 
+                                                        data-wow-delay="1.5s">
+                                                </span>
+                                            </div>
+
+                                            <!-- DotCube Direction -->
+                                            <ul class="dotcube3 col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.0s">
+                                                <li class="tit fadeInUp" data-wow-delay="1.2s">
+                                                    DotCube Direction
+                                                </li>
+                                                <li>
+                                                    Implementation of an expanded metaverse world<br class="pc">
+                                                    that is diversified and organically connected, centered on individual user experiences
+                                                </li>
+                                                <li>
+                                                    Implementation of decentralized<br class="pc">
+                                                    metaverse network service
+                                                </li>
+                                                <li>
+                                                    Providing technical foundation for connecting networks between services with individual business characteristics and user networks
+                                                </li>
+                                                <li>
+                                                    Technical Platform composition<br class="pc">
+                                                    considering service scalability
+                                                    <span style="margin-top: -20px;">
+                                                        (Securing technical foundation to enhance user immersion)
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    Establishing an open structure that ensures independence of individual services while enabling resource sharing within the network
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- 컨택트 섹션 -->
+                            <section id="metaverseContact" class="sub_contact">
+                                <div class="container">
+                                    <div class="row">
+                                        <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                            Would you like to collaborate with Metarock?
+                                        </h4>
+                                        <a class="btn_contact wow fadeInUp" 
+                                            data-wow-delay="0.8s" 
+                                            href="contact.html">
+                                            CONTACT US
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="footer-include"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('footer-include').innerHTML = data;
+                                });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 

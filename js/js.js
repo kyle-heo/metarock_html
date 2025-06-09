@@ -180,7 +180,11 @@ $(function () {
   $(document).on('mouseenter', 'header .gnb_pc', function (e) {
     e.stopPropagation();
     e.preventDefault();
-    $('header h1 img').attr('src', 'images/logo/logo.png');
+    
+    // Check if URL contains '/en' and set logo path accordingly
+    const logoPath = window.location.pathname.includes('/en') ? '../images/logo/logo.png' : 'images/logo/logo.png';
+    $('header h1 img').attr('src', logoPath);
+    
     $('header').css({
       'background-color': 'rgba(255, 255, 255, 1)',
       'box-shadow': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
@@ -193,7 +197,9 @@ $(function () {
   $(document).on('mouseleave', 'header .gnb_pc', function (e) {
     e.stopPropagation();
     e.preventDefault();
-    $('header h1 img').attr('src', 'images/logo/logo-white.png');
+    // Check if URL contains '/en' and set logo path accordingly
+    const logoPath = window.location.pathname.includes('/en') ? '../images/logo/logo-white.png' : 'images/logo/logo-white.png';
+    $('header h1 img').attr('src', logoPath);
     $('header').css({
       'background-color': 'rgba(0, 0, 0, 0.6)',
       'box-shadow': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',

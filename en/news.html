@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="../thumbnail/thumbnail.png?ver=20220421">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="../thumbnail/thumbnail.png?ver=20220623">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <title>METAROCK</title>
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    <link rel="icon" href="../images/logo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/suneditor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
+    <!-- News List Style -->
+    <style>
+        .news-table {
+            width: 100%;
+            border-top: 2px solid #333;
+            margin-top: 2rem;
+        }
+        
+        .news-table th {
+            background: #f8f9fa;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #dee2e6;
+            font-weight: 500;
+        }
+        
+        .news-table td {
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .news-table .news-title {
+            text-align: left;
+        }
+        
+        .news-table .news-title a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-table .news-title a:hover {
+            color: #007bff;
+        }
+        
+        .news-table .news-date {
+            color: #666;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .news-table .news-no {
+            text-align: center;
+            width: 80px;
+        }
+        
+        .news-preview {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .news-table th:first-child,
+            .news-table td:first-child {
+                display: none;
+            }
+            
+            .news-preview {
+                display: none;
+            }
+            
+            .news-table td {
+                padding: 1rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<noscript>JavaScript must be enabled to use this site.</noscript>
+<div id="root">
+    <div class="App">
+        <div class="wrap">
+            <div>
+                <div style="position: relative;">
+                    <div id="header-include"></div>
+                    <script>
+                        fetch('header.html')
+                            .then(res => res.text())
+                            .then(data => {
+                                document.getElementById('header-include').innerHTML = data;
+                            });
+                    </script>
+                    <div id="popup_layer" class="container"></div>
+                    <div class="wrap">
+                        <div id="content">
+                            <section id="newsMain" class="sub_main">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.2s">
+                                                PR Center · News
+                                            </p>
+                                            <h3 class="wow fadeInDown" data-wow-delay="0.4s">
+                                                METAROCK NEWS
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="newsCont">
+                                <div class="container">
+                                    <table class="news-table">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Title</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="news-no">10</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.paxetv.com/news/articleView.html?idxno=232118" target="_blank">
+                                                        Metarock & JP3E Holdings Inc Pursue Strategic Merger
+                                                        <span class="news-preview">
+                                                            Metarock, a metaverse technology development company, announced on the 13th that it will pursue a strategic alliance and merger with NASDAQ OTC listed company JP3E Holdings Inc.
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">4 weeks ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">9</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.metroseoul.co.kr/article/20250513500175" target="_blank">
+                                                        Metarock Pursues Strategic Merger with NASDAQ OTC Listed 'JP3E Holdings'
+                                                        <span class="news-preview">
+                                                            JP3E Holdings is a global investment company that has invested in various fields including technology, media, and healthcare, highly valuing the potential of digital transformation and next-generation platform companies...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">4 weeks ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">8</td>
+                                                <td class="news-title">
+                                                    <a href="https://biz.chosun.com/stock/stock_general/2025/05/13/JMGRO3VTDVAP3CLDJ7HBSVYMMM/" target="_blank">
+                                                        JP3E Holdings Pursues Strategic Merger with Korean Metaverse Company Metarock
+                                                        <span class="news-preview">
+                                                            JP3E Holdings is a global investment company investing in tech, media, healthcare, and other sectors. Recently focusing on digital transformation and next-generation platforms, metaverse technology and content...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">4 weeks ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">7</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.newsis.com/view/NISX20250513_0003173379" target="_blank">
+                                                        JP3E Holdings Pursues Strategic Merger with Korean Metarock
+                                                        <span class="news-preview">
+                                                            According to the company, this merger was decided as JP3E Holdings chose the metaverse industry as its future growth engine. JP3E Holdings has invested in technology, media, healthcare, and other sectors...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">4 weeks ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">6</td>
+                                                <td class="news-title">
+                                                    <a href="https://biz.heraldcorp.com/article/10486058" target="_blank">
+                                                        NASDAQ OTC Listed JP3E Holdings Pursues Strategic Merger with Korean Metarock... Full-Scale Entry into Metaverse
+                                                        <span class="news-preview">
+                                                            [Herald Economy=Shin Dongyun Reporter] NASDAQ OTC listed company JP3E Holdings Inc. and Korean metaverse technology development company Metarock...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">4 weeks ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">5</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.paxetv.com/news/articleView.html?idxno=213376" target="_blank">
+                                                        Metarock "Pursuing NASDAQ Entry through SPAC Merger"
+                                                        <span class="news-preview">
+                                                            DCP is a revolutionary system where anyone can create a metaverse in just 5 minutes, aligning with the trend of personal ownership of digital assets, where individual creators own all digital...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">Sept. 30, 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">4</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.segye.com/newsView/20240930514687" target="_blank">
+                                                        Metaverse Company Metarock Pursues NASDAQ Listing
+                                                        <span class="news-preview">
+                                                            Metaverse company Metarock announced on the 30th that it will pursue NASDAQ listing through SPAC merger. Metarock on the 4th...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">Sept. 30, 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">3</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.dailian.co.kr/news/view2/1412263/?sc=Daum&kakao_from=mainnews" target="_blank">
+                                                        Metarock Takes on NASDAQ Entry Challenge through SPAC Merger... "Expected to Complete Within This Year"
+                                                        <span class="news-preview">
+                                                            'Anthony, Linder & Cacomanolis, PLLC' listed SBC Medical Group Holdings, Inc. on NASDAQ at a $1 billion valuation and led the $500 million fuboTV, Inc. listing...
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">Sept. 30, 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="news-no">2</td>
+                                                <td class="news-title">
+                                                    <a href="https://www.hankyung.com/article/2023121333085" target="_blank">
+                                                        Metarock-Liaison Advisory Group Sign Final Agreement
+                                                        <span class="news-preview">
+                                                            Metarock (CEO Young-wook Cho), which is pursuing DotCube Protocol (DCP) as the global metaverse standard protocol, announced that it has signed with US-based Liaison Advisory Group (CEO...)
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                                <td class="news-date">Dec. 13, 2023</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                            <section id="newsContact" class="sub_contact">
+                                <div class="container">
+                                    <div class="row">
+                                        <h4 class="wow fadeInDown" data-wow-delay="0.4s">
+                                            Do you have any questions about Metarock?
+                                        </h4>
+                                        <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">
+                                            CONTACT US
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="footer-include"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('footer-include').innerHTML = data;
+                                });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 

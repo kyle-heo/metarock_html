@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta property="og:url" content="http://www.metarock.co.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="METAROCK">
+    <meta property="og:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="og:image" content="../thumbnail/thumbnail.png?ver=20220421">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="METAROCK">
+    <meta property="twitter:description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta property="twitter:image" content="../thumbnail/thumbnail.png?ver=20220623">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <title>METAROCK</title>
+    <meta name="description" content="The Way to the Metaverse. Meet us, Metarock">
+    <meta name="keywords" content="Blockchain, Metaverse">
+    <link rel="icon" href="../images/logo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/animate.css?ver=20221129">
+    <link rel="stylesheet" href="../css/common.css?ver=20220713">
+    <link rel="stylesheet" href="../css/style.css?ver=20231212">
+    <link rel="stylesheet" href="../css/responsive.css?ver=20231212">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/suneditor.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46dc4f0d63.js" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugins.js?ver=20231212"></script>
+    <script src="../js/wow.js"></script>
+    <script src="../js/js.js?ver=20231212"></script>
+    <script src="../js/scroll.js?ver=20231212"></script>
+    <style>
+        .notice-list {
+            margin: 2rem 0;
+        }
+        .notice-item {
+            border-bottom: 1px solid #dee2e6;
+            padding: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        .notice-item:hover {
+            background-color: #f8f9fa;
+        }
+        .notice-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        .notice-title h5 {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .notice-title .date {
+            color: #666;
+            font-size: 0.875rem;
+        }
+        .notice-content {
+            color: #666;
+            font-size: 0.875rem;
+        }
+        .notice-content p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .notice-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .notice-title .date {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<noscript>JavaScript must be enabled to use this site.</noscript>
+<div id="root">
+    <div class="App">
+        <div class="wrap">
+            <div>
+                <div style="position: relative;">
+                    <div id="header-include"></div>
+                    <script>
+                        fetch('header.html')
+                            .then(res => res.text())
+                            .then(data => {
+                                document.getElementById('header-include').innerHTML = data;
+                            });
+                    </script>
+                    <div id="popup_layer" class="container"></div>
+                    <div class="wrap">
+                        <div id="content">
+                            <section id="noticeMain" class="sub_main">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="title wow fadeInDown" data-wow-delay="0.2s">PR Center · Notice</p>
+                                            <h3 class="wow fadeInDown" data-wow-delay="0.4s">METAROCK Notice</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="noticeCont">
+                                <div class="container">
+                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInRight notice_search_form"
+                                        style="visibility: visible; animation-name: fadeInRight;">
+                                        <fieldset>
+                                            <legend class="d-none">Notice Search</legend>
+                                            <div class="search-select-wrap">
+                                                <select name="field" class="form-select">
+                                                    <option value="articleSubject">Title</option>
+                                                    <option value="articleContent">Content</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-input-wrap">
+                                                <input type="text" class="form-control searchInput" placeholder="Enter search term">
+                                                <button type="button" class="btn btn-primary searchBtn">Search</button>
+                                            </div>
+                                        </fieldset>
+                                    </div> -->
+                                    <div class="notice-list">
+                                        <!-- 2025 -->
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.4s">
+                                            <div class="notice-title">
+                                                <h5>[Merger] Strategic Merger Pursuit between Metarock and JP3E Holdings Inc</h5>
+                                                <span class="date">2025.05.13</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Announcement of strategic alliance and merger pursuit with NASDAQ OTC listed company JP3E Holdings Inc.</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- 2024 -->
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="notice-title">
+                                                <h5>[Listing] Metarock Pursuing NASDAQ Listing through SPAC Merger</h5>
+                                                <span class="date">2024.09.30</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Pursuing NASDAQ listing in collaboration with Anthony, Linder & Cacomanolis, PLLC</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- 2023 -->
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.6s">
+                                            <div class="notice-title">
+                                                <h5>[Agreement] Main Contract Signed with Liaison Advisory Group</h5>
+                                                <span class="date">2023.12.13</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Contract signed regarding global metaverse standard protocol DCP (DotCube Protocol)</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.7s">
+                                            <div class="notice-title">
+                                                <h5>[Agreement] MOU Signed with Nuriflex Holdings for 'Sports Metaverse Zone' Development</h5>
+                                                <span class="date">2023.06</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.8s">
+                                            <div class="notice-title">
+                                                <h5>[Global] MOU Signed with Empire Distribution for 'Hip-hop Metaverse' Development</h5>
+                                                <span class="date">2023.06</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="0.9s">
+                                            <div class="notice-title">
+                                                <h5>[Agreement] MOU Signed with Atom Holdings for "Atom Metaverse Development and Service"</h5>
+                                                <span class="date">2023.05</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="1.0s">
+                                            <div class="notice-title">
+                                                <h5>[Patent Application] Open Protocol Cube System for Registering and Utilizing Different Protocol Items</h5>
+                                                <span class="date">2023.03.15</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Application No: 10-2023-0034199</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="1.1s">
+                                            <div class="notice-title">
+                                                <h5>[Patent Application] Metaverse System Management Service System Using Open Protocol DotCuber</h5>
+                                                <span class="date">2023.03.15</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Application No: 10-2023-0033913</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="1.2s">
+                                            <div class="notice-title">
+                                                <h5>[New Release] Launch of Fantasy Sports Prediction Game WINNERPICK</h5>
+                                                <span class="date">2023.03.15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="1.3s">
+                                            <div class="notice-title">
+                                                <h5>[Agreement] Advertising Solution Contract Signed with EDAI for Metaverse</h5>
+                                                <span class="date">2023.03.15</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="notice-item wow fadeInUp" data-wow-delay="1.4s">
+                                            <div class="notice-title">
+                                                <h5>[Patent Application] Open Protocol Cube System with Automatic Transmission Compression Rate Adjustment</h5>
+                                                <span class="date">2023.03.03</span>
+                                            </div>
+                                            <div class="notice-content">
+                                                <p>Application No: 10-2023-0028653</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination justify-content-center mt-4">
+                                            <li class="page-item active">
+                                                <span class="page-link">1</span>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </section>
+                            <section id="noticeContact" class="sub_contact">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h4 class="wow fadeInDown" data-wow-delay="0.4s">Do you have any questions about METAROCK?</h4>
+                                            <a class="btn_contact wow fadeInUp" data-wow-delay="0.8s" href="contact.html">CONTACT US</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="footer-include"></div>
+                        <script>
+                            fetch('footer.html')
+                                .then(res => res.text())
+                                .then(data => {
+                                    document.getElementById('footer-include').innerHTML = data;
+                                });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html> 
