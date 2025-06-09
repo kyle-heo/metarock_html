@@ -7,6 +7,7 @@ $(function () {
     $("#newsCont .container_wrap>.contents").removeClass("hide");
     $("#newsCont .container_wrap>.contents").eq(num).addClass("hide");
   });
+
   //header
   // $("header").mouseenter(function (e) {
   //   $("header h1 img").attr("src", "images/logo/logo.png");
@@ -173,4 +174,33 @@ $(function () {
   });
 
   $("#faq li:eq(0) dt").trigger("click");
+
+
+  // 동적 바인딩으로 header 드롭다운 및 스타일 변경
+  $(document).on('mouseenter', 'header .gnb_pc', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $('header h1 img').attr('src', 'images/logo/logo.png');
+    $('header').css({
+      'background-color': 'rgba(255, 255, 255, 1)',
+      'box-shadow': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
+      'border-bottom': '1px solid rgba(255, 255, 255, 0.18)'
+    });
+    $('header .gnb_pc a').css('color', '#000');
+    $(this).find('.dropdown').stop().slideDown(200);
+  });
+
+  $(document).on('mouseleave', 'header .gnb_pc', function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $('header h1 img').attr('src', 'images/logo/logo-white.png');
+    $('header').css({
+      'background-color': 'rgba(0, 0, 0, 0.6)',
+      'box-shadow': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
+      'border-bottom': '1px solid rgba(255, 255, 255, 0.18)'
+    });
+    $('header .gnb_pc .menu > li > a').css('color', '#fff');
+    $('header .gnb_pc .lang > li > a').css('color', '#fff');
+    $(this).find('.dropdown').stop().slideUp(500);
+  }); 
 });
